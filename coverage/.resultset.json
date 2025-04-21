@@ -744,8 +744,21 @@
           1,
           null
         ]
+      },
+      "/myapp/spec/system/techniques_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1745039120
+    "timestamp": 1745141492
   }
 }
