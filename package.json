@@ -12,7 +12,6 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.13",
-    "postcss": "^8.5.3",
-    "swiper": "^11.2.6"
+    "postcss": "^8.5.3"
   }
 }
