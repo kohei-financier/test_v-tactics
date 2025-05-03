@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get "folders/new"
+  get "folders/create"
+  get "folders/index"
+  get "folders/edit"
+  get "folders/update"
+  get "folders/destroy"
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   root "techniques#index"
   devise_for :users, controllers: {
@@ -27,4 +33,5 @@ Rails.application.routes.draw do
     resources :twitter, only: %i[new create show edit update destroy]
   end
   resources :favorites, only: %i[create destroy]
+  resources :folders, only: %i[new create index edit update destroy]
 end
