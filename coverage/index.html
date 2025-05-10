@@ -13,7 +13,7 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2025-05-08T20:25:19+09:00">2025-05-08T20:25:19+09:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2025-05-10T14:55:34+09:00">2025-05-10T14:55:34+09:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,7 +22,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  12.24%
+  12.03%
 </span>
 
      </span>
@@ -42,11 +42,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>286</b> relevant lines,
+    <b>291</b> relevant lines,
     <span class="green"><b>35</b> lines covered</span> and
-    <span class="red"><b>251</b> lines missed. </span>
+    <span class="red"><b>256</b> lines missed. </span>
     (<span class="red">
-  12.24%
+  12.03%
 </span>
 )
   </div>
@@ -160,10 +160,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c9f907e32a86400438928fce472e5023653536e8" class="src_link" title="app/controllers/techniques_controller.rb">app/controllers/techniques_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">16</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">16</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -378,7 +378,7 @@
     <span class="group_name">Controllers</span>
     (<span class="covered_percent">
       <span class="red">
-  3.65%
+  3.55%
 </span>
 
      </span>
@@ -398,11 +398,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>192</b> relevant lines,
+    <b>197</b> relevant lines,
     <span class="green"><b>7</b> lines covered</span> and
-    <span class="red"><b>185</b> lines missed. </span>
+    <span class="red"><b>190</b> lines missed. </span>
     (<span class="red">
-  3.65%
+  3.55%
 </span>
 )
   </div>
@@ -494,10 +494,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c9f907e32a86400438928fce472e5023653536e8" class="src_link" title="app/controllers/techniques_controller.rb">app/controllers/techniques_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">16</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">16</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -1676,7 +1676,7 @@
 
             
 
-            <code class="ruby">      redirect_to favorites_techniques_path, success: &quot;フォルダの作成に成功しました&quot;</code>
+            <code class="ruby">      redirect_to favorites_technique_path(current_user.id), success: &quot;フォルダの作成に成功しました&quot;</code>
           </li>
         </div>
       
@@ -2982,9 +2982,9 @@
     
 
     <div class="t-line-summary">
-      <b>16</b> relevant lines.
+      <b>21</b> relevant lines.
       <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>16</b> lines missed.</span>
+      <span class="red"><b>21</b> lines missed.</span>
     </div>
 
     
@@ -3145,12 +3145,12 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="16">
             
 
             
 
-            <code class="ruby">    @folders = current_user.folders.includes(:user)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3160,12 +3160,82 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    @folder = Folder.new</code>
           </li>
         </div>
       
         <div>
           <li class="missed" data-hits="0" data-linenumber="18">
+            
+
+            
+
+            <code class="ruby">    @my_folders = current_user.folders.includes(:user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="19">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="21">
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+
+            
+
+            <code class="ruby">  def folder_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="23">
+            
+
+            
+
+            <code class="ruby">    params.require(:folder).permit(:title)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="24">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="25">
             
 
             
@@ -6402,7 +6472,7 @@
 
             
 
-            <code class="ruby">  validates :title, presence: true, length: { maximum: 255 }</code>
+            <code class="ruby">  validates :title, presence: true, length: { maximum: 30 }</code>
           </li>
         </div>
       
